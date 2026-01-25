@@ -4,6 +4,10 @@ var shipping;
 inStock = true;
 shipping = false;
 
+inStock = false;
+shipping = false;
+
+
 // Get the element that has an id of stock
 var elStock = document.getElementById('stock');
 // Set class name with value of inStock variable

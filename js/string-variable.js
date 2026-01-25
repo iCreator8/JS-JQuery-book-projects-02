@@ -6,6 +6,11 @@ var message;
 username = 'Molly';
 message = 'See our upcoming range';
 
+
+
+username = 'Iskandar';
+message = 'What a great deal!';
+
 // Get the element with an id of name.
 var elName = document.getElementById('name');
 // Replace the content of this element.

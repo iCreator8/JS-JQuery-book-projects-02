@@ -1,41 +1,45 @@
 // Create variables for the welcome message
-var greeting = 'Howdy ';
-var name = 'Molly';
-var message = ', please check your order:';
+const greeting = "Greetings ";
+const customerName = "Iskandar";
+const message = ", welcome to our store! ";
 // Concatenate the three variables above to create the welcome message
-var welcome = greeting + name + message;
+const welcomeMessage = greeting + customerName + message;
 
 // Create variables to hold details about the sign
-var sign = 'Montague House';
-var tiles = sign.length;
-var subTotal = tiles * 5;
-var shipping = 7;
-var grandTotal = subTotal + shipping;
+const sign = "iCreator LLC";
+let tiles = sign.length;
+let subTotal = tiles * 10;
+let shipping = 7;
+let grandTotal = subTotal + shipping;
 
 // Get the element that has an id of greeting
-var el = document.getElementById('greeting');
+const elGreeting = document.getElementById("greeting");
+
+
 // Replace the content of that element with the personalized welcome message
-el.textContent = welcome;
+elGreeting.textContent = welcomeMessage;
 
 // Get the element that has an id of userSign then update its contents
-var elSign = document.getElementById('userSign');
-elSign.textContent = sign;
+const elUserSign = document.getElementById("userSign");
+elUserSign.textContent = sign;
 
 // Get the element that has an id of tiles then update its contents
-var elTiles = document.getElementById('tiles');
+const elTiles = document.getElementById("tiles");
 elTiles.textContent = tiles;
 
 // Get the element that has an id of subTotal then update its contents
-var elSubTotal = document.getElementById('subTotal');
-elSubTotal.textContent = '$' + subTotal;
+const elSubTotal = document.getElementById("subTotal");
+elSubTotal.textContent = "$" + subTotal;
 
+// Get the element that has an id of shipping
+const elShipping = document.getElementById("shipping");
 // Get the element that has an id of shipping then update its contents
-var elShipping = document.getElementById('shipping');
-elShipping.textContent = '$' + shipping;
+
+elShipping.textContent = "$" + shipping;
 
 // Get the element that has an id of grandTotal then update its contents
-var elGrandTotal = document.getElementById('grandTotal');
-elGrandTotal.textContent = '$' + grandTotal;
+const elGrandTotal = document.getElementById("grandTotal");
+elGrandTotal.textContent = "$" + grandTotal;
 
 /* 
 NOTE: textContent does not work in IE8 or earlier

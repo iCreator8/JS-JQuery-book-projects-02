@@ -4,8 +4,10 @@ var greeting = 'Howdy ';
 // Store the users name in a variable
 var name = 'Molly';
 
+var firstName = 'Iskandar';
+
 /* Create the welcome message by concatenating the strings in the two variables */
-var welcomeMessage = greeting + name + '!';
+var welcomeMessage = greeting + firstName + '!';
 
 // Get the element that has an id of greeting
 var el = document.getElementById('greeting');
